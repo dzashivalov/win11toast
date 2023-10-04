@@ -2,8 +2,8 @@
 [![PyPI](https://badge.fury.io/py/win11toast.svg)](https://badge.fury.io/py/win11toast)
 
 # win11toast
-Toast notifications for Windows 10 and 11 based on [WinRT](https://docs.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/adaptive-interactive-toasts)
-This is fork of [win11toast](https://github.com/GitHub30/win11toast) project.
+Toast notifications for Windows 10 and 11 based on [WinRT](https://docs.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/adaptive-interactive-toasts)  
+This is fork of [win11toast](https://github.com/GitHub30/win11toast) project.  
 It has been modified for work inputs with dictionary.
 
 ## Dictionary Usage
