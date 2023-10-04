@@ -3,8 +3,8 @@
 
 # win11toast
 Toast notifications for Windows 10 and 11 based on [WinRT](https://docs.microsoft.com/en-us/windows/apps/design/shell/tiles-and-notifications/adaptive-interactive-toasts)  
-This is fork of [win11toast](https://github.com/GitHub30/win11toast) project.  
-It has been modified for work inputs with dictionary.
+This is a fork of [win11toast](https://github.com/GitHub30/win11toast) project.  
+It's been modified for work inputs with a dictionary.
 
 ## Dictionary Usage
 
