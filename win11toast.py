@@ -124,6 +124,22 @@ def add_input(id, document):
         input.set_attribute(name, value)
     actions.append_child(input)
 
+# added for dictionary usage
+def add_input_dict(id, title_value, ph_value, document):
+    if isinstance(id, str):
+        id = {
+            'id': id,
+            'title': title_value,
+            'type': 'text',
+            'placeHolderContent': ph_value
+        }
+    actions = document.select_single_node(
+        '//actions') or create_actions(document)
+    input = document.create_element('input')
+    for name, value in id.items():
+        input.set_attribute(name, value)
+    actions.append_child(input)
+
 
 def add_selection(selection, document):
     if isinstance(selection, list):
@@ -261,7 +277,9 @@ def notify(title=None, body=None, on_click=print, icon=None, image=None, progres
         add_input(input, document)
     if inputs:
         for input in inputs:
-            add_input(input, document)
+            # added dictionary usage. {id:[title, placeHolderContent]}
+            add_input_dict(input, inputs[input][0], inputs[input][1], document) if isinstance(inputs, dict) \
+                else add_input(input, document)
     if selection:
         add_selection(selection, document)
     if selections:
